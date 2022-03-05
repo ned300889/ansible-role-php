@@ -1,0 +1,7 @@
+---
+__php_version: '7.0'
+__php_packages: 
+  - 'php{{ __php_version }}'
+  - 'php{{ __php_version }}-fpm'
+__php_daemon: 'php{{ __php_version }}-fpm'
+__externalRepo: 'ppa:ondrej/php'

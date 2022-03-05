@@ -1,2 +1,6 @@
 ---
-# Default file 
+- name: Include variables
+  include_tasks: variables.yml
+
+- name: Include platform specific tasks
+  include_tasks: "{{ ansible_os_family }}-php-install.yml"
