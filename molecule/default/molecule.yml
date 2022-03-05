@@ -5,8 +5,7 @@ driver:
   name: docker
 platforms:
   - name: instance
-    #image: ned300889/docker-${MOLECULE_DISTRO:-ubuntu2004}-ansible:latest
-    image: ubuntu2004-test
+    image: ned300889/docker-${MOLECULE_DISTRO:-ubuntu2004}-ansible:latest
     command: ""
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
